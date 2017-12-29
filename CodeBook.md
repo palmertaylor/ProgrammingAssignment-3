@@ -1,99 +1,187 @@
+______________________________________________________________________________________________
+
 This code book describes the variables, the data, and any transformations or work I performed to clean up the data.
+______________________________________________________________________________________________
 
 By observing the subject and activity, each row contained 79 averaged signal measurements. Subjects ranged from 1-30 and the activities were organized by: 
 WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, and LAYING. 
 
 The measurements were organized by timeDomain (from the accelerometer and gyroscope) and frequencyDomain (from the Fast Fourier Transform).
 
+______________________________________________________________________________________________
+
 Here are the codes I used for the timeDomain:
 
 timeDomainBodyAccelerometerMeanX
+
 timeDomainBodyAccelerometerMeanY
+
 timeDomainBodyAccelerometerMeanZ
+
 timeDomainBodyAccelerometerStandardDeviationX
+
 timeDomainBodyAccelerometerStandardDeviationY
+
 timeDomainBodyAccelerometerStandardDeviationZ
+
 timeDomainGravityAccelerometerMeanX
+
 timeDomainGravityAccelerometerMeanY
+
 timeDomainGravityAccelerometerMeanZ
+
 timeDomainGravityAccelerometerStandardDeviationX
+
 timeDomainGravityAccelerometerStandardDeviationY
+
 timeDomainGravityAccelerometerStandardDeviationZ
+
 timeDomainBodyAccelerometerJerkMeanX
+
 timeDomainBodyAccelerometerJerkMeanY
+
 timeDomainBodyAccelerometerJerkMeanZ
+
 timeDomainBodyAccelerometerJerkStandardDeviationX
+
 timeDomainBodyAccelerometerJerkStandardDeviationY
+
 timeDomainBodyAccelerometerJerkStandardDeviationZ
+
 timeDomainBodyGyroscopeMeanX
+
 timeDomainBodyGyroscopeMeanY
+
 timeDomainBodyGyroscopeMeanZ
+
 timeDomainBodyGyroscopeStandardDeviationX
+
 timeDomainBodyGyroscopeStandardDeviationY
+
 timeDomainBodyGyroscopeStandardDeviationZ
+
 timeDomainBodyGyroscopeJerkMeanX
+
 timeDomainBodyGyroscopeJerkMeanY
+
 timeDomainBodyGyroscopeJerkMeanZ
+
 timeDomainBodyGyroscopeJerkStandardDeviationX
+
 timeDomainBodyGyroscopeJerkStandardDeviationY
+
 timeDomainBodyGyroscopeJerkStandardDeviationZ
+
 timeDomainBodyAccelerometerMagnitudeMean
+
 timeDomainBodyAccelerometerMagnitudeStandardDeviation
+
 timeDomainGravityAccelerometerMagnitudeMean
+
 timeDomainGravityAccelerometerMagnitudeStandardDeviation
+
 timeDomainBodyAccelerometerJerkMagnitudeMean
+
 timeDomainBodyAccelerometerJerkMagnitudeStandardDeviation
+
 timeDomainBodyGyroscopeMagnitudeMean
+
 timeDomainBodyGyroscopeMagnitudeStandardDeviation
+
 timeDomainBodyGyroscopeJerkMagnitudeMean
+
 timeDomainBodyGyroscopeJerkMagnitudeStandardDeviation
+
+______________________________________________________________________________________________
 
 Here are the codes I used for the frequencyDomain:
 
 frequencyDomainBodyAccelerometerMeanX
+
 frequencyDomainBodyAccelerometerMeanY
+
 frequencyDomainBodyAccelerometerMeanZ
+
 frequencyDomainBodyAccelerometerStandardDeviationX
+
 frequencyDomainBodyAccelerometerStandardDeviationY
+
 frequencyDomainBodyAccelerometerStandardDeviationZ
+
 frequencyDomainBodyAccelerometerMeanFrequencyX
+
 frequencyDomainBodyAccelerometerMeanFrequencyY
+
 frequencyDomainBodyAccelerometerMeanFrequencyZ
+
 frequencyDomainBodyAccelerometerJerkMeanX
+
 frequencyDomainBodyAccelerometerJerkMeanY
+
 frequencyDomainBodyAccelerometerJerkMeanZ
+
 frequencyDomainBodyAccelerometerJerkStandardDeviationX
+
 frequencyDomainBodyAccelerometerJerkStandardDeviationY
+
 frequencyDomainBodyAccelerometerJerkStandardDeviationZ
+
 frequencyDomainBodyAccelerometerJerkMeanFrequencyX
+
 frequencyDomainBodyAccelerometerJerkMeanFrequencyY
+
 frequencyDomainBodyAccelerometerJerkMeanFrequencyZ
+
 frequencyDomainBodyGyroscopeMeanX
+
 frequencyDomainBodyGyroscopeMeanY
+
 frequencyDomainBodyGyroscopeMeanZ
+
 frequencyDomainBodyGyroscopeStandardDeviationX
+
 frequencyDomainBodyGyroscopeStandardDeviationY
+
 frequencyDomainBodyGyroscopeStandardDeviationZ
+
 frequencyDomainBodyGyroscopeMeanFrequencyX
+
 frequencyDomainBodyGyroscopeMeanFrequencyY
+
 frequencyDomainBodyGyroscopeMeanFrequencyZ
+
 frequencyDomainBodyAccelerometerMagnitudeMean
+
 frequencyDomainBodyAccelerometerMagnitudeStandardDeviation
+
 frequencyDomainBodyAccelerometerMagnitudeMeanFrequency
+
 frequencyDomainBodyAccelerometerJerkMagnitudeMean
+
 frequencyDomainBodyAccelerometerJerkMagnitudeStandardDeviation
+
 frequencyDomainBodyAccelerometerJerkMagnitudeMeanFrequency
+
 frequencyDomainBodyGyroscopeMagnitudeMean
+
 frequencyDomainBodyGyroscopeMagnitudeStandardDeviation
+
 frequencyDomainBodyGyroscopeMagnitudeMeanFrequency
+
 frequencyDomainBodyGyroscopeJerkMagnitudeMean
+
 frequencyDomainBodyGyroscopeJerkMagnitudeStandardDeviation
+
 frequencyDomainBodyGyroscopeJerkMagnitudeMeanFrequency
 
-For the tranformations, 
+______________________________________________________________________________________________
 
-Merges the training and the test sets to create one data set.
-Extracts only the measurements on the mean and standard deviation for each measurement.
-Uses descriptive activity names to name the activities in the data set.
-Appropriately labels the data set with descriptive variable names.
-From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+For the tranformations, I conducted the following:
+
+1. Merged the training and the test sets to create one data set.
+2. Extracted only the measurements on the mean and standard deviation for each measurement.
+3. Used descriptive activity names to name the activities in the data set.
+4. Appropriately labelled the data set with descriptive variable names.
+5. From the data set in step 4, created a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+______________________________________________________________________________________________
